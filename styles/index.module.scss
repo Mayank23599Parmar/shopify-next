@@ -1,0 +1,148 @@
+@import "mixin";
+@import "variable";
+@import "comman";
+.home_page {
+    background-color: $primary_color;
+    .home_collection_list {
+        .main_title_wrapper {
+            margin-bottom: 60px;
+        }
+    }
+    .feature_collection {
+        .feature_collection_wrapper {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            gap: 10px;
+            .image {
+                width: calc(50% - 5px);
+                .collection_details {
+                    padding-top: 20px;
+                    .title {
+                        font-weight: 600;
+                        font-size: 16px;
+                        margin-bottom: 20px;
+                    }
+                    .description_wrapper {
+                        padding: 8px;
+                        .description {
+                            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            margin-bottom: 20px;
+                        }
+                        .btn {
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .feature_products {
+                width: calc(50% - 5px);
+            }
+        }
+    }
+    .image_width_text {
+        .image_with_text_wrapper {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include align-items(center);
+            gap: 118px;
+            .image {
+                width: calc(50% - 59px);
+            }
+            .text_wrapper {
+                width: calc(50% - 59px);
+            }
+        }
+    }
+    .collection_grid {
+        .collection_grid_wrapper {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            gap: 10px;
+            .product {
+                display: block;
+                text-decoration: none;
+                .image {
+                    img {
+                        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.02));
+                    }
+                }
+                .text_wrapper {
+                    .title {
+                        margin: 20px 0;
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.4;
+                    }
+                    .desctiption {
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 1.1;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        white-space: pre-wrap;
+                    }
+                }
+            }
+        }
+    }
+    .as_seen_in_section {
+        padding: 100px 0;
+        margin-bottom: 150px;
+        background: #f4f4f4;
+        .as_seen_in_section_wrapper {
+            @include flexbox();
+            @include flex-wrap(wrap);
+            gap: 10px;
+        }
+    }
+    .home_slide {
+        .home_slider_wrapper{
+            position: relative;
+            .image_slider {
+                position: relative;
+                .text_wrapper {
+                    position: absolute;
+                    width: 361px;
+                    height: max-content;
+                    background-color: transparent;
+                    .title {
+                        font-family: "Cormorant", serif;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 100%;
+                  
+                    }
+                    .description {
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 140%;
+                        margin: 23px 0;
+                    }
+                    .shop_now_btn {
+                        display: initial;
+                        border: none;
+                        text-decoration: none;
+                        padding: 17px 51px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                    }
+                    &.background {
+                        background-color: #ffff;
+                        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+                        padding: 40px 35px;
+                    }
+                }
+            }  
+        }
+       
+    }
+}
