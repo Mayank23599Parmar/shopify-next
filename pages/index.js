@@ -3,7 +3,7 @@ import style from "../styles/index.module.scss"
 import HomeCollectionList from "@/components/home/HomeCollectionList";
 import HomeFeatureCollection from "@/components/home/HomeFeatureCollection";
 import HomeImageWithText from "@/components/home/HomeImageWithText";
-//test commit
+//test commitsss
 import { client } from "@/utils/apollo-client";
 import { gql } from "@apollo/client";
 import HomeAsSeenInSection from "@/components/home/HomeAsSeenInSection";
